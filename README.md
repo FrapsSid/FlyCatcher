@@ -79,7 +79,7 @@ Optional (for evolution plots after training):
 
 Run the simulation:
 
-    python fly_catcher.py
+    python run.py
 
 The program will:
 
@@ -205,7 +205,7 @@ This encourages teams that:
 
 ## Configuration
 
-All parameters can be adjusted at the top of fly_catcher.py:
+All parameters can be adjusted at the top of run.py:
 
 ### Arena & Entities
 
