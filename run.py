@@ -1,5 +1,6 @@
 """
 Fly Catcher - Genetic Algorithm Training
+By Maksim Batuev, Karim Fajzahanov and Alina Shadrina
 """
 
 import pygame
@@ -20,7 +21,7 @@ ARENA_HEIGHT = 150
 SCALE = 3
 
 # Flies
-NUM_FLIES = 50 # не вставляйте больше 50 иначе лагать будет
+NUM_FLIES = 50
 FLY_SPEED = 2.2
 FLY_SIZE = 3
 
@@ -401,7 +402,6 @@ class Frog:
         self.catch_positions = []
         self.catch_times = []
 
-    #если у вас вылетает ошибка - то это ваш скил ишью код ниже не трогать - Макс
     def update(self, flies: List[Fly], other_frogs: List['Frog'], 
                current_step: int, spatial_grid: SpatialGrid):
         if self.tongue_out:
@@ -1057,8 +1057,6 @@ def main():
         avg_time = ga.history['avg_completion_time'][-1]
         perfect_count = ga.history['perfect_clears'][-1]
         catch_speed = ga.history['avg_catch_speed'][-1]
-
-        #пж не убирайте эмодзи - Макс
         
         print(f"  📈 Fitness   - Best: {best_fitness:.1f}  Avg: {avg_fitness:.1f}")
         print(f"  ⏱️  Speed     - Completion: {avg_time:.0f}steps  Rate: {catch_speed:.2f}/100")
